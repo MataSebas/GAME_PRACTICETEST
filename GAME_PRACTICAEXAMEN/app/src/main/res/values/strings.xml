@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GAME_PRACTICAEXAMEN</string>
+    <string name="Title_Game">Juego Dados</string>
+    <string name="txt_DataUser">Datos del Jugador</string>
+    <string name="txt_UserName">Nombre del Jugador</string>
+    <string name="txt_Date">Fecha de Nacimiento</string>
+    <string name="txt_NumOfGamble">Fondo de Apuestas</string>
+    <string name="numOfDices">Cantidad de Dados</string>
+    <string name="enter_BtnTitle">Ingresar</string>
+    <string name="txt_mainPage">Precaución! Los juegos de azar tienen un efecto negativo, debido a lo nocivo y adictivo que se pueden tornar este tipo de juegos.</string>
+    <string name="player">Jugador:</string>
+    <string name="num_AvaiMoney">Monto Disponible</string>
+    <string name="num_GambledMoney">Monto Apostado</string>
+    <string name="txt_DiceofGame">Dados del Juego</string>
+    <string name="txt_ThrowDices">Lanzar Dados</string>
+    <string name="txt_selectGambl">Marca Tu Apuesta</string>
+    <string name="txt_status">Estado</string>
+    <string name="txt_GameStatus">Estado de Juego</string>
+    <string name="txt_GameStatusWin">¡Eres un Ganador!</string>
+    <string name="txt_GameStatusNone">¡Te Salvaste!</string>
+    <string name="txt_GameStatusLose">No deberías de jugar ...Retirate</string>
+    <string name="txt_GameStatusLoseAll">Lo perdiste todo ...No vuelvas a jugar!</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GAME_PRACTICAEXAMEN</string>
+    <string name="Title_Game">Dice Game</string>
+    <string name="txt_DataUser">Player Data</string>
+    <string name="txt_UserName">Player Name</string>
+    <string name="txt_Date">Birthdate</string>
+    <string name="txt_NumOfGamble">betting fund</string>
+    <string name="numOfDices">Number of Dice\'s</string>
+    <string name="enter_BtnTitle">Access</string>
+    <string name="txt_mainPage">Caution! Gambling has a negative effect, due to how harmful and addictive these types of games can become.</string>
+    <string name="player">Player:</string>
+    <string name="num_AvaiMoney">Amount Available</string>
+    <string name="num_GambledMoney">Bet Amount</string>
+    <string name="txt_DiceofGame">Dice\'s of the game</string>
+    <string name="txt_ThrowDices">Throw Dice\'s</string>
+    <string name="txt_selectGambl">Select your bet</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_GameStatus">Game Status</string>
+    <string name="txt_GameStatusWin">¡You are a Winner!</string>
+    <string name="txt_GameStatusNone">¡You Saved!</string>
+    <string name="txt_GameStatusLose">You shouldn\'t play ...Go away</string>
+    <string name="txt_GameStatusLoseAll">You lost everything ...Don\'t play this game ever!</string>
+</resources>
