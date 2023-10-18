@@ -4,34 +4,33 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
-import android.widget.RadioButton
+import android.widget.NumberPicker
 import android.widget.Toast
+import com.example.game_practicaexamen.R
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var txtCedula: EditText
-    private lateinit var txtNombre: EditText
+    private lateinit var txt_PlayerName: EditText
     private lateinit var fecNacido: EditText
-    private lateinit var rbtFemenino: RadioButton
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val numberPicker: NumberPicker = findViewById(R.id.numberPicker)
+        txt_PlayerName   = findViewById(R.id.PlayerName)
+        fecNacido   = findViewById(R.id.DatePicker)
+        numberPicker.minValue = 0
+        numberPicker.maxValue = 3
+
 
     }
 
     fun ejecutar(view: View) {
         var aplicar = true
-        if (txtCedula.getText().toString().trim({ it <= ' ' }).length == 0) {
+        if (txt_PlayerName.getText().toString().trim({ it <= ' ' }).length == 0) {
             Toast.makeText(this, "Id requerido", Toast.LENGTH_SHORT).show()
-            txtCedula.requestFocus()
-            aplicar = false
-        }
-
-        if (txtNombre.getText().toString().trim({ it <= ' ' }).length == 0 && aplicar) {
-            Toast.makeText(this, "Nombre requerido", Toast.LENGTH_SHORT).show()
-            txtNombre.requestFocus()
+            txt_PlayerName.requestFocus()
             aplicar = false
         }
 
@@ -41,24 +40,16 @@ class MainActivity : AppCompatActivity() {
             aplicar = false
         }
 
-        if (aplicar) {
-            //Invoca otra ventana
-            val laotra = Intent(this, GameScreen::class.java)
-            var sexo = 'F'
+            if (aplicar) {
+                //Invoca otra ventana
+                val Game_Screen = Intent(this, GameScreen::class.java)
 
-            if (rbtFemenino.isChecked) {
-                sexo = 'F'
-            } else {
-                sexo = 'M'
-            }
 
-            laotra.putExtra("id", txtCedula.getText())
-            laotra.putExtra("nombre", txtNombre.getText())
-            laotra.putExtra("sexo", sexo)
-            laotra.putExtra("nacido", fecNacido.getText())
+                Game_Screen.putExtra("Nombre Jugador", txt_PlayerName.getText())
 
-            startActivity(laotra)
+                startActivity(Game_Screen)
 
-        }//fin del if de aplicar
-    }//fin del método ejecutar
-}
+            }//fin del if de aplicar
+        }//fin del método ejecutar
+    }
+

@@ -29,30 +29,41 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="187dp"
-        android:layout_height="19dp"
+        android:layout_width="63dp"
+        android:layout_height="18dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:text="@string/player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lblName"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="188dp"
-        android:layout_height="18dp"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="144dp"
         android:text="@string/num_AvaiMoney"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="186dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="168dp"
+        android:layout_width="109dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
         android:text="@string/num_GambledMoney"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,38 +72,39 @@
         android:id="@+id/textView11"
         android:layout_width="128dp"
         android:layout_height="20dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="228dp"
         android:text="@string/txt_DiceofGame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/Dice1"
         android:layout_width="44dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
+        app:layout_constraintVertical_bias="0.772"
         app:srcCompat="@drawable/baseline_square" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/Dice2"
         android:layout_width="44dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
+        app:layout_constraintVertical_bias="0.772"
         app:srcCompat="@drawable/baseline_square" />
 
+
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/Dice3"
         android:layout_width="44dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -100,9 +112,8 @@
         app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
+        app:layout_constraintVertical_bias="0.772"
         app:srcCompat="@drawable/baseline_square" />
-
 
     <TextView
         android:id="@+id/textView12"
@@ -122,7 +133,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.522">
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -132,7 +144,8 @@
             app:layout_constraintHorizontal_bias="0.662"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.424">
+            app:layout_constraintVertical_bias="0.424"
+            >
 
             <TableRow>
 
@@ -281,10 +294,10 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Play"
         android:layout_width="165dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="28dp"
         android:text="Lanzar Dados"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -310,6 +323,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_question_mark_24" />
+
+    <EditText
+        android:id="@+id/AmountAvailable"
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="2000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AmountBet"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <!--
 
     -->!
